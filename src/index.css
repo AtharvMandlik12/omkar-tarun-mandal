@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #ff8a00;
+  --primary-dark: #e87500;
+  --cream: #fff7e6;
+  --white: #ffffff;
+  --dark: #202020;
+  --muted: #777777;
+  --background: #fffaf3;
+  --shadow: 0 16px 40px rgba(255, 138, 0, 0.12);
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: var(--dark);
+  background: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--background);
+  color: var(--dark);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7c57d;
+  border-radius: 9999px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .receipt-print-shell,
+  .receipt-print-shell * {
+    visibility: visible;
+  }
+
+  .receipt-print-shell {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hide-on-print {
+    display: none !important;
+  }
+}
